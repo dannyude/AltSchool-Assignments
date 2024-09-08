@@ -1,0 +1,97 @@
+/* General reset */
+body {
+    font-family: 'Arial', sans-serif; /* Ensuring consistent font across the page */
+    background-image: url(" /static/images/sign_up.svg"); /* Background image path */
+    background-color: rgb(226, 234, 236);   
+    background-size: contain; /* Cover the entire screen */
+    background-repeat: no-repeat; /* No repeat of the background image */
+    background-attachment: fixed;
+
+  
+}
+
+.centered-container
+{ 
+  min-height: 100vh;              /* Ensure full viewport height */
+  margin: 0; 
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #007bff; /* Primary color */
+  
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+
+/* Flash Messages */
+.flash-messages {
+  position: fixed;
+  top: 60px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 1000; 
+}
+
+.alert {
+  z-index: 1001; 
+}
+
+/* Content Area */
+main {
+  flex: 1; 
+  padding: 20px;
+}
+
+/* Overlay Form (if applicable) */
+
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Table Styling */
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+/* Form Fields */
+.form-control {
+  border-radius: 5px;
+}
+
+.form-check-input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/*
+/*
+/* CSS for fade-in and fade-out transitions for elements with class "fade-in" and "fade-out" */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.6s ease-in; /* Changed duration to 1 second */
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.6s ease-out; /* Changed duration to 1 second */
+}
+
+.d-none {
+  display: none !important;
+}
+
+.p{
+    text-align: center;
+}

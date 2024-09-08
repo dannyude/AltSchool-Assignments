@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="overlay-form">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <h3 class="dark-grey text-center">Sign Up</h3>
+
+        <p class="text-center">Take the next steps to apply to AltSchool Africa</p>
+
+        <form method="POST" action="/signup" novalidate>
+          {{ form.hidden_tag() }}
+
+          <div class="mb-3">
+            <label for="first_name" class="form-label">First Name:</label>
+            <input type="text" class="form-control" id="first_name" name="first_name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="last_name" class="form-label">Last Name:</label>
+            <input type="text" class="form-control" id="last_name" name="last_name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="gender" class="form-label">Gender:</label>
+            <select class="form-select" id="gender" name="gender" required>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="date_of_birth" class="form-label">Date of Birth (dd/mm/yyyy):</label>
+            <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phone_number" class="form-label">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone_number" name="phone_number" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="country" class="form-label">Select your country:</label>
+            <select class="form-select" id="country" name="country" required>
+              {% for code, name in countries %}
+              <option value="{{ code }}">{{ name }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="city" class="form-label">City:</label>
+            <input type="text" class="form-control" id="city" name="city" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="how_heard" class="form-label">How did you hear about us?</label>
+            <input type="text" class="form-control" id="how_heard" name="how_heard">
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="confirm_password" class="form-label">Confirm Password:</label>
+            <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+          </div>
+
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="agree_terms" required>
+            <label class="form-check-label" for="agree_terms">By clicking continue, I agree to <a href="#">Terms of
+                Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a></label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
