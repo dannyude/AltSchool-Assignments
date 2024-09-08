@@ -1,0 +1,54 @@
+/* Add this CSS to your stylesheet (e.g., styles.css) */
+
+/* Styling for breadcrumbs */
+.breadcrumbs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1em;
+}
+
+.breadcrumbs li {
+    margin-right: 1em;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Styling for the main heading */
+.main-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+/* Container styling */
+.content-container {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Styling for the student ID */
+.student-id {
+    font-weight: bold;
+}
+
+/* Section heading styling */
+.section-heading {
+    text-align: center;
+    margin-top: 2em;
+}
+
+/* Styling for the goals list */
+.goals-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.goals-list li {
+    margin-bottom: 0.8em;
+}
