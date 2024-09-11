@@ -8,7 +8,7 @@ from wtforms.validators import DataRequired, Email, EqualTo
 # Load country data
 def load_country_data():
     file_path = os.path.join(os.path.dirname(__file__), "countries.json")
-    with open("countries.json") as f:
+    with open(file_path) as f:
         countries = json.load(f)
     return [(country["code"], country["name"]) for country in countries]
 
