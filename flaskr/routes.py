@@ -19,6 +19,36 @@ def sign_up():
     )
 
 
+@app.route("/engineering")
+def engineering():
+    return render_template("pages/engineering.html", title="Engineering")
+
+
+@app.route("/product")
+def product():
+    return render_template("pages/product.html", title="Product")
+
+
+@app.route("/data")
+def data():
+    return render_template("pages/data.html", title="Data")
+
+
+@app.route("/business")
+def business():
+    return render_template("pages/business.html", title="Business")
+
+
+@app.route("/creative_economy")
+def creative_economy():
+    return render_template("pages/creative_economy.html", title="Creative Economy")
+
+
 @app.route("/about_me")
 def about_me():
     return render_template("about_me.html", title="About me")
+
+
+@app.route("/media")
+def media():
+    return render_template("pages/media.html", title="Anime Journey")

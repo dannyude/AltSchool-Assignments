@@ -1,0 +1,67 @@
+* Overlay styling */
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark overlay */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+.hero-section {
+    text-align: left;
+    color: white;
+    z-index: 1; /* Ensure content is above the background */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section .card-body p.lead {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.btn-custom {
+    background-color: #ff7f50; /* Custom button color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #ff5722; /* Darker shade on hover */
+}
+
+/* Program card styling */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.learn-more {
+    color: #ff7f50;
+    font-weight: bold;
+}
+
+.learn-more svg {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.learn-more:hover svg {
+    transform: translateX(4px);
+}
+
+

@@ -1,0 +1,84 @@
+/* General Body Styling */
+body.media-page {
+    background-color: #f8f9fa;
+}
+
+/* Introduction Section */
+.intro-section {
+    background-color: #fff;
+    color: #333;
+}
+
+.card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.learn-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learn-more:hover {
+    color: #0056b3;
+}
+
+.carousel {
+    margin-top: 2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+}
+
+
+
+.btn-custom {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background-color: #c9306b;
+}
+
+.carousel .btn {
+    margin: 0.5rem;
+}
+
+#carousel-play,
+#carousel-pause {
+    display: inline-block;
+    margin-top: 1rem;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .intro-section {
+        padding: 30px;
+    }
+
+    .intro-section h1 {
+        font-size: 2rem;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+}

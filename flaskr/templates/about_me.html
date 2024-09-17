@@ -1,59 +1,65 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class="overlay-form">
+    <nav aria-label="Breadcrumb">
+        <ol class="breadcrumbs">
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#goals">Goals</a></li>
+        </ol>
+    </nav>
 
-<nav aria-label="Breadcrumb">
-    <ol class="breadcrumbs">
-        <li><a href="#biography">Biography</a></li>
-        <li><a href="#goals">Goals</a></li>
-    </ol>
-</nav>
+    <section id="biography">
+        <h1 id="top" class="main-heading">About Me</h1>
 
-<section id="biography">
-    <h1 id="top" class="main-heading">About Me</h1>
+        <div class="content-container">
+            <p>Hello! My name is Daniel Ude, and I am currently enrolled at AltSchool
+                (<b class="student-id">ALT/SOE/024/0398</b>).
+                As an aspiring backend developer, I joined AltSchool to gain a strong foundation in software engineering
+                and
+                ultimately earn a degree in the field.</p>
 
-    <div class="content-container">
-        <p>Hello! My name is Daniel Ude, and I am currently enrolled at AltSchool
-            (<b class="student-id">ALT/SOE/024/0398</b>).
-            As an aspiring backend developer, I joined AltSchool to gain a strong foundation in software engineering and
-            ultimately earn a degree in the field.</p>
+            <p>The comprehensive curriculum, coupled with their experienced lecturers, is exactly what I needed to push
+                my
+                career to the next level.</p>
 
-        <p>The comprehensive curriculum, coupled with their experienced lecturers, is exactly what I needed to push my
-            career to the next level.</p>
+            <section id="goals">
+                <h2 class="section-heading">Goals</h2>
 
-        <section id="goals">
-            <h2 class="section-heading">Goals</h2>
+                <ul class="goals-list">
+                    <li>
+                        <b>Mastering backend technologies:</b> I aim to develop a deep understanding of server-side
+                        languages,
+                        frameworks, databases, and APIs.
+                    </li>
+                    <li>
+                        <b>Building practical projects:</b> I plan to actively participate in hands-on projects to apply
+                        my
+                        knowledge and gain real-world experience.
+                    </li>
+                    <li>
+                        <b>Collaborating with peers:</b> I believe in the power of teamwork and look forward to
+                        collaborating
+                        with
+                        my classmates on challenging assignments.
+                    </li>
+                    <li>
+                        <b>Networking with industry professionals:</b> I want to build relationships with mentors and
+                        industry
+                        experts to learn from their experiences and insights.
+                    </li>
+                    <li>
+                        <b>Graduating with honors:</b> I am committed to academic excellence and strive to graduate with
+                        top
+                        marks.
+                    </li>
+                </ul>
 
-            <ul class="goals-list">
-                <li>
-                    <b>Mastering backend technologies:</b> I aim to develop a deep understanding of server-side
-                    languages,
-                    frameworks, databases, and APIs.
-                </li>
-                <li>
-                    <b>Building practical projects:</b> I plan to actively participate in hands-on projects to apply my
-                    knowledge and gain real-world experience.
-                </li>
-                <li>
-                    <b>Collaborating with peers:</b> I believe in the power of teamwork and look forward to
-                    collaborating
-                    with
-                    my classmates on challenging assignments.
-                </li>
-                <li>
-                    <b>Networking with industry professionals:</b> I want to build relationships with mentors and
-                    industry
-                    experts to learn from their experiences and insights.
-                </li>
-                <li>
-                    <b>Graduating with honors:</b> I am committed to academic excellence and strive to graduate with top
-                    marks.
-                </li>
-            </ul>
+                <p>By achieving these goals, I am confident that I will be well-prepared to launch a successful career
+                    in
+                    backend
+                    development.</p>
+        </div>
+</div>
 
-            <p>By achieving these goals, I am confident that I will be well-prepared to launch a successful career in
-                backend
-                development.</p>
-    </div>
-
-    {% endblock %}
+{% endblock %}

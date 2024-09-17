@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Overlay Section -->
+<div class="overlay">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="col-md-5">
+            <div class="card bg-transparent border-0">
+                <div class="card-header bg-transparent border-0">
+                    <h1 class="display-4">Welcome to the School of Business!</h1>
+                </div>
+                <div class="card-body">
+                    <p class="lead">Prepare for a rewarding career in tech. We offer various technical courses that
+                        equip you with the knowledge and skills
+                        required to start, switch, or boost your career.</p>
+                    <a href="#" class="btn btn-custom btn-lg">Start Learning &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Programs Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Our Programs</h2>
+    <div class="row g-4">
+
+        <!-- High-Impact Selling: From Prospecting to Closing -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/sales_card.png') }}" class="card-img-top"
+                    alt="High-Impact Selling: From Prospecting to Closing">
+                <div class="card-body">
+                    <h5 class="card-title">High-Impact Selling: From Prospecting to Closing</h5>
+                    <p class="card-text">Invest in your professional growth and equip yourself with the essential skills
+                        and strategies to excel in the
+                        competitive sales landscape.</p>
+                    <a href="#" class="learn-more">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.293 1.5a.5.5 0 0 1 .707 0l4 4a.5.5 0 0 1 0 .707l-4 4a.5.5 0 0 1-.707-.707L13.293 6H1.5a.5.5 0 0 1 0-1h11.793l-2.646-2.646a.5.5 0 0 1 0-.707z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Digital Marketing -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/digital_marketing_card.png') }}" class="card-img-top"
+                    alt="Digital Marketing">
+                <div class="card-body">
+                    <h5 class="card-title">Digital Marketing</h5>
+                    <p class="card-text">The program is designed to teach you how to start and boost your digital
+                        marketing career regardless of your niche
+                        interest.</p>
+                    <a href="#" class="learn-more">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.293 1.5a.5.5 0 0 1 .707 0l4 4a.5.5 0 0 1 0 .707l-4 4a.5.5 0 0 1-.707-.707L13.293 6H1.5a.5.5 0 0 1 0-1h11.793l-2.646-2.646a.5.5 0 0 1 0-.707z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+
+        {% endblock %}

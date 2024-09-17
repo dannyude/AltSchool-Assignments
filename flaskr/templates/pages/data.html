@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Overlay Section -->
+<div class="overlay">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="col-md-5">
+            <div class="card bg-transparent border-0">
+                <div class="card-header bg-transparent border-0">
+                    <h1 class="display-4">Welcome to the School of Data!</h1>
+                </div>
+                <div class="card-body">
+                    <p class="lead">Prepare for a rewarding career in tech. We offer various technical courses that
+                        equip you with the knowledge and skills required to start, switch, or boost your career.</p>
+                    <a href="#" class="btn btn-custom btn-lg">Start Learning &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Programs Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Our Programs</h2>
+    <div class="row g-4">
+        <!-- Data Analysis -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/data_analysis.png') }}" class="card-img-top"
+                    alt="Data Analysis">
+                <div class="card-body">
+                    <h5 class="card-title">Data Analysis</h5>
+                    <p class="card-text">It is designed to provide you with in-depth knowledge on how to create
+                        functional websites through the use of various programming languages.</p>
+                    <a href="#" class="learn-more">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.293 1.5a.5.5 0 0 1 .707 0l4 4a.5.5 0 0 1 0 .707l-4 4a.5.5 0 0 1-.707-.707L13.293 6H1.5a.5.5 0 0 1 0-1h11.793l-2.646-2.646a.5.5 0 0 1 0-.707z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/data_science_card.png') }}" class="card-img-top"
+                    alt="Data Science">
+                <div class="card-body">
+                    <h5 class="card-title">Data Science</h5>
+                    <p class="card-text">You will learn how to program servers, client-side interfaces, and
+                        design databases using the various programming languages.</p>
+                    <a href="#" class="learn-more">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.293 1.5a.5.5 0 0 1 .707 0l4 4a.5.5 0 0 1 0 .707l-4 4a.5.5 0 0 1-.707-.707L13.293 6H1.5a.5.5 0 0 1 0-1h11.793l-2.646-2.646a.5.5 0 0 1 0-.707z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Engineering -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/data_engineering_card.png') }}" class="card-img-top"
+                    alt="Data Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Data Engineering</h5>
+                    <p class="card-text">Gain hands-on experience with cloud platforms. It combines software
+                        development and IT operations to build and maintain cloud infrastructure.</p>
+                    <a href="#" class="learn-more">Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.293 1.5a.5.5 0 0 1 .707 0l4 4a.5.5 0 0 1 0 .707l-4 4a.5.5 0 0 1-.707-.707L13.293 6H1.5a.5.5 0 0 1 0-1h11.793l-2.646-2.646a.5.5 0 0 1 0-.707z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
